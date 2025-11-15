@@ -17,16 +17,16 @@ def summarize_results(results):
 def coin_toss():
     return random.choice(['Heads', 'Tails'])
 
-def sumilate_tosses(num_tosses):
+def simulate_tosses(num_tosses):
     if not int(num_tosses):
         print("Please enter valid number.")
         raise Exception
 
-    print(f'\nTossing for {num_tosses} times')
+    #print(f'\nTossing for {num_tosses} times')
     tosses = []
     for i in range(num_tosses):
         res = coin_toss()
-        print(f"Toss #{i}: {res}")
+        #print(f"Toss #{i}: {res}")
         tosses.append(res)
 
     return tosses
